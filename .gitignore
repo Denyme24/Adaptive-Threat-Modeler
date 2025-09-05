@@ -1,32 +1,108 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node.js
 node_modules/
-.env   
-frontend/.env
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
-frontend/.env.development
-frontend/.env.test
-frontend/.env.production
-backend/.env
-backend/.env.local
-backend/.env.development.local
-backend/.env.test.local
-backend/.env.production.local
-backend/.env.development
-backend/.env.test
-backend/.env.production
-backup/
-mcp/.env
-mcp/.env.local
-mcp/.env.development.local
-mcp/.env.test.local
-mcp/.env.production.local
-mcp/.env.development
-mcp/.env.test
-mcp/.env.production
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Frontend build output
+frontend/dist/
+frontend/dist-ssr/
+frontend/coverage/
+frontend/.nyc_output/
+
+# Go build output
+backend/main
+backend/threat-modeler
+backend/bin/
+backend/*.exe
+backend/*.dll
+backend/*.so
+backend/*.dylib
+
+# Go test coverage
+backend/coverage.out
+backend/coverage.html
+
+# Python
+mcp/__pycache__/
+mcp/*.py[cod]
+mcp/*$py.class
+mcp/*.so
+mcp/.Python
+mcp/build/
+mcp/develop-eggs/
+mcp/dist/
+mcp/downloads/
+mcp/eggs/
+mcp/.eggs/
+mcp/lib/
+mcp/lib64/
+mcp/parts/
+mcp/sdist/
+mcp/var/
+mcp/wheels/
+mcp/pip-wheel-metadata/
+mcp/share/python-wheels/
+mcp/*.egg-info/
+mcp/.installed.cfg
+mcp/*.egg
+mcp/MANIFEST
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Data directories
 data/
-frontend/node_modules/
+temp/
+tmp/
+backup/
+
+# Application specific
 backend/data/commits/
 backend/data/scans/
+frontend/node_modules/
+
+# SSL certificates
+ssl/
+*.pem
+*.key
+*.crt
+
+# Docker
+.dockerignore
 
