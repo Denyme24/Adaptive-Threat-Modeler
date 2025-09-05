@@ -64,19 +64,6 @@ graph TD
 - **Python** 3.11+ (for MCP agent)
 - **Git** (for repository analysis)
 
-### 🐳 Docker Setup (Recommended)
-
-```bash
-# Clone the repository
-git clone https://github.com/Denyme24/Adaptive-Threat-Modeler.git
-cd Adaptive-Threat-Modeler
-
-# Start all services with Docker Compose
-docker-compose up -d
-
-# Access the application
-open http://localhost:3000
-```
 
 ### 🛠️ Manual Setup
 
@@ -400,47 +387,7 @@ export DEBUG=true
 export LOG_LEVEL=DEBUG
 ```
 
-## 🚀 Deployment
 
-### Production Deployment
-
-#### Docker Production Setup
-
-```bash
-# Build production images
-docker-compose -f docker-compose.prod.yml build
-
-# Deploy with production configuration
-docker-compose -f docker-compose.prod.yml up -d
-```
-
-#### Kubernetes Deployment
-
-```bash
-# Apply Kubernetes manifests
-kubectl apply -f k8s/
-
-# Check deployment status
-kubectl get pods -l app=adaptive-threat-modeler
-```
-
-### Environment-Specific Configurations
-
-#### Development
-- Detailed logging and debug information
-- Hot reloading for frontend
-- Development API endpoints
-
-#### Staging
-- Production-like environment
-- Limited logging
-- Performance monitoring
-
-#### Production
-- Optimized builds
-- Error tracking
-- Security hardening
-- Load balancing
 
 ## 🤝 Contributing
 
@@ -465,22 +412,7 @@ We welcome contributions! Please follow these guidelines:
    cd mcp && pip install -r requirements.txt
    ```
 
-### Code Standards
 
-#### Backend (Go)
-- Follow Go conventions and use `gofmt`
-- Add tests for new functionality
-- Update API documentation
-
-#### Frontend (React/TypeScript)
-- Use TypeScript for type safety
-- Follow React best practices
-- Maintain component documentation
-
-#### MCP Agent (Python)
-- Follow PEP 8 style guidelines
-- Add type hints
-- Include docstrings for functions
 
 ### Testing
 
@@ -515,8 +447,6 @@ cd mcp && python -m pytest
 
 - [Security Rules Reference](docs/SECURITY_RULES.md)
 - [API Examples](docs/API_EXAMPLES.md)
-- [Deployment Guide](docs/DEPLOYMENT.md)
-- [Contributing Guide](docs/CONTRIBUTING.md)
 
 ## 🔒 Security
 
