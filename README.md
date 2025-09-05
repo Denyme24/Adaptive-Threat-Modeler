@@ -2,8 +2,6 @@
 
 <div align="center">
 
-![Adaptive Threat Modeler Logo](frontend/public/placeholder.svg)
-
 **A continuous, AI-powered, context-aware threat modeling tool for modern software development**
 
 [![Go](https://img.shields.io/badge/Go-1.23+-00ADD8?style=flat-square&logo=go)](https://golang.org/)
